@@ -14,7 +14,7 @@ class MrText extends StatelessWidget {
   final Color color;
   final double fontSize;
   final FontWeight fontWeight;
-  final TextAlign textAlign;
+  final TextAlign? textAlign;
   @override
   Widget build(BuildContext context) {
     return Text(

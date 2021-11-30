@@ -16,11 +16,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         canvasColor: Colors.white,
-        appBarTheme: AppBarTheme(color: Colors.teal[200])
+        appBarTheme: AppBarTheme(color: Colors.teal[200]!)
       ),
       home: const MainScreen(),
       routes: {
-        '/rosary-guide': (context)  => const RosaryGuideScreen()
+        '/rosary-guide': (context) => const RosaryGuideScreen()
       },
     );
   }

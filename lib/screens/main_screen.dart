@@ -52,7 +52,9 @@ class _MainScreenState extends State<MainScreen> {
     return MrScaffold(
         appBarTitle: const MrText(
           text: "My Rosary",
-          color: Colors.black,
+          color: Colors.white,
+          fontWeight: FontWeight.bold,
+          fontSize: 18,
         ),
         drawer: const MrMainDrawer(),
         body: Column(children: <Widget>[
