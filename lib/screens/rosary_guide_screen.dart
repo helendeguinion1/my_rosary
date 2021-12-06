@@ -9,8 +9,18 @@ class RosaryGuideScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MrScaffold(
-      appBarTitle: const MrText(text: "Guide", fontSize: 16, color: Colors.white70,),
-      body: Image.asset('assets/images/rosary_guide.png'),
+      appBarTitle: const MrText(
+        text: "Guide",
+        color: Colors.white,
+        fontWeight: FontWeight.bold,
+        fontSize: 18,
+      ),
+      body: Image.asset(
+        'assets/images/rosary_guide.png',
+        height: 750,
+        width: double.infinity,
+        fit: BoxFit.fill,
+      ),
     );
   }
 }

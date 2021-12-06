@@ -13,10 +13,19 @@ class MrMainDrawer extends StatelessWidget {
         decoration: BoxDecoration(
           color: Colors.teal[200]!,
         ),
-        child: const Center(child: Text('Pray Rosary Daily'),),
+        child: const Center(
+          child: MrText(
+            text: 'Pray Rosary Daily',
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            fontSize: 18,
+          ),
+        ),
       ),
       ListTile(
-        title: const MrText(text: "Rosary Guide",),
+        title: const MrText(
+          text: "Rosary Guide",
+        ),
         onTap: () {
           Navigator.pushNamed(context, '/rosary-guide');
         },

@@ -20,7 +20,7 @@ class MrElevatedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      style: ElevatedButton.styleFrom(primary: Colors.green[200]),
+      style: ElevatedButton.styleFrom(primary: Colors.teal[200]),
       child: MrText(
         text: text,
         color: textColor,
