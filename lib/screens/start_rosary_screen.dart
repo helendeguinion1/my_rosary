@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:my_rosary/widgets/organisms/mr_scaffold.dart';
 import 'package:my_rosary/widgets/atoms/mr_text.dart';
 import 'package:my_rosary/widgets/molecules/mr_labeled_checkbox.dart';
+//Helper
+import 'package:my_rosary/helper/page_transition_helper.dart' show FadeRoute;
+//Screen
+import 'package:my_rosary/screens/mystery_screen.dart';
 
 class StartRosaryScreen extends StatefulWidget {
   const StartRosaryScreen({Key? key, this.currentMystery}) : super(key: key);
@@ -14,6 +18,18 @@ class StartRosaryScreen extends StatefulWidget {
 
 class _StartRosaryScreenState extends State<StartRosaryScreen> {
   final _steps = Steps();
+
+  _checkIfAllDone() {
+    if (_steps.signOfTheCross &&
+        _steps.appostlesCreed &&
+        _steps.ourFather &&
+        _steps.threeHailMary &&
+        _steps.gloryBe) {
+      Navigator.of(context).push(
+          FadeRoute(page: MysteryScreen(rosaryName: widget.currentMystery!)));
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return MrScaffold(
@@ -31,6 +47,7 @@ class _StartRosaryScreenState extends State<StartRosaryScreen> {
               setState(() {
                 _steps.signOfTheCross = newValue!;
               });
+              _checkIfAllDone();
             },
             label: "Sign of the Cross"),
         Divider(
@@ -43,6 +60,7 @@ class _StartRosaryScreenState extends State<StartRosaryScreen> {
               setState(() {
                 _steps.appostlesCreed = newValue!;
               });
+              _checkIfAllDone();
             },
             label: "Recite Apostle's Creed"),
         const Divider(),
@@ -53,6 +71,7 @@ class _StartRosaryScreenState extends State<StartRosaryScreen> {
               setState(() {
                 _steps.ourFather = newValue!;
               });
+              _checkIfAllDone();
             },
             label: "Recite Our Father"),
         const Divider(),
@@ -63,6 +82,7 @@ class _StartRosaryScreenState extends State<StartRosaryScreen> {
               setState(() {
                 _steps.threeHailMary = newValue!;
               });
+              _checkIfAllDone();
             },
             label: "Recite Hail Mary (3x)"),
         const Divider(),
@@ -73,6 +93,7 @@ class _StartRosaryScreenState extends State<StartRosaryScreen> {
               setState(() {
                 _steps.gloryBe = newValue!;
               });
+              _checkIfAllDone();
             },
             label: "Recite Glory Be"),
       ]),
