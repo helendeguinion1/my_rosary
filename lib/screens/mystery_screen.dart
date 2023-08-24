@@ -14,9 +14,7 @@ class MysteryScreen extends StatelessWidget {
   _setMysteries() {
     switch (rosaryName) {
       case 'Joyful':
-        RosariesMysteries(
-          firstMystery: ''
-        );
+        RosariesMysteries(firstMystery: '');
         break;
       case 'Sorrowful':
         break;
@@ -63,5 +61,6 @@ class RosariesMysteries {
       this.thirdMyteryDesc,
       this.fourthMystery,
       this.fourthMyteryDesc,
-      this.fifthMystery, this.fifthMyteryDesc});
+      this.fifthMystery,
+      this.fifthMyteryDesc});
 }
