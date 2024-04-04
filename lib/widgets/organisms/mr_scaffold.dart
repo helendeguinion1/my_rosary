@@ -25,6 +25,7 @@ class MrScaffold extends StatelessWidget {
       appBar: AppBar(
         title: appBarTitle,
         actions: actions,
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       drawer: drawer,
       body: body,
