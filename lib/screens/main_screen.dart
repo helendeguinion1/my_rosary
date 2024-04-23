@@ -22,15 +22,13 @@ class _MainScreenState extends State<MainScreen> {
     return MrScaffold(
         appBarTitle: const MrText(
           text: "My Rosary",
-          color: Colors.white,
           fontWeight: FontWeight.bold,
+          color: Color.fromARGB(255, 59, 58, 58),
           fontSize: 18,
         ),
         drawer: const MrMainDrawer(),
         body: Column(children: <Widget>[
-          Padding(
-              padding: const EdgeInsets.symmetric(vertical: 2.0),
-              child: Image.asset('assets/images/main_screen_image.png')),
+          Image.asset('assets/images/mama_mary.png'),
           const SizedBox(
             height: 30,
           ),
@@ -38,14 +36,14 @@ class _MainScreenState extends State<MainScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child: MrText(
               text: weekdaysName(),
-              color: Colors.green[300]!,
+              color: const Color(0xff67729D),
               fontWeight: FontWeight.bold,
               fontSize: 40,
             ),
           ),
           MrText(
             text: mysteryToday(weekdaysName())['name'],
-            color: Colors.green[200]!,
+            color: const Color(0xff67729D),
             fontSize: 30,
           ),
           Padding(
@@ -64,13 +62,11 @@ class _MainScreenState extends State<MainScreen> {
                 width: double.infinity,
                 child: MrElevatedButton(
                   text: 'Start My Rosary',
-                  textColor: Colors.white,
                   textWeight: FontWeight.bold,
                   textSize: 15,
                   onPressed: () => Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => PrayersScreen(
-                            mysteryDay:
-                                mysteryToday(weekdaysName())['dayMapping'],
+                            dayName: weekdaysName(),
                           ))),
                 ),
               ))

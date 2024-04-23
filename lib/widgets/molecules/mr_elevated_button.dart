@@ -6,7 +6,7 @@ class MrElevatedButton extends StatelessWidget {
   const MrElevatedButton(
       {Key? key,
       this.text,
-      this.textColor = Colors.blueAccent,
+      this.textColor = const Color(0xff67729D),
       this.textSize = 14.0,
       this.onPressed,
       this.textWeight = FontWeight.normal})
@@ -20,7 +20,7 @@ class MrElevatedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      style: ElevatedButton.styleFrom(primary: Colors.teal[200]),
+      style: ElevatedButton.styleFrom(backgroundColor: const Color(0xfff3dadb)),
       child: MrText(
         text: text,
         color: textColor,

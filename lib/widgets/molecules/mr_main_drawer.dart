@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_rosary/screens/rosary_guide_screen.dart';
 //Widget
 import 'package:my_rosary/widgets/atoms/mr_text.dart';
 
@@ -27,7 +28,10 @@ class MrMainDrawer extends StatelessWidget {
           text: "Rosary Guide",
         ),
         onTap: () {
-          Navigator.pushNamed(context, '/rosary-guide');
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => const RosaryGuideScreen()));
         },
       )
     ]));

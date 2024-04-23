@@ -22,10 +22,11 @@ class MrScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: resizeBottomInset,
+      endDrawerEnableOpenDragGesture: false,
       appBar: AppBar(
         title: appBarTitle,
         actions: actions,
-        iconTheme: const IconThemeData(color: Colors.white),
+        iconTheme: const IconThemeData(color: Colors.black),
       ),
       drawer: drawer,
       body: body,

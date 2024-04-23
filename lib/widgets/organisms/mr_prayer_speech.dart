@@ -159,7 +159,7 @@ class _MrPrayerSpeechState extends State<MrPrayerSpeech> {
           text: 'Pray with Audio',
           fontSize: 16,
           fontWeight: FontWeight.w300,
-          color: Colors.teal,
+          color: Colors.pink,
           fontStyle: FontStyle.italic,
         ),
         Row(
@@ -169,36 +169,36 @@ class _MrPrayerSpeechState extends State<MrPrayerSpeech> {
                     padding: const EdgeInsets.only(right: 16),
                     child: Container(
                       decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 215, 243, 241),
-                          border: Border.all(color: Colors.teal),
+                          color: const Color.fromARGB(255, 250, 235, 238),
+                          border: Border.all(color: Colors.pink),
                           borderRadius: BorderRadius.circular(24)),
                       child: IconButton(
                           onPressed: _pause,
                           icon: const Icon(
                             Icons.pause,
                             size: 32,
-                            color: Colors.teal,
+                            color: Colors.pink,
                           )),
                     ),
                   )
                 : const SizedBox.shrink(),
             Container(
               decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 215, 243, 241),
-                  border: Border.all(color: Colors.teal),
+                  color: const Color.fromARGB(255, 250, 235, 238),
+                  border: Border.all(color: Colors.pink),
                   borderRadius: BorderRadius.circular(24)),
               child: IconButton(
                   onPressed: isPlaying || isContinued ? _stop : _speak,
                   icon: isPlaying || isContinued
                       ? const Icon(
                           Icons.stop,
-                          color: Color.fromARGB(255, 240, 105, 96),
+                          color: Color.fromARGB(255, 214, 13, 6),
                           size: 32,
                         )
                       : const Icon(
                           Icons.play_arrow_outlined,
                           size: 32,
-                          color: Colors.teal,
+                          color: Colors.pink,
                         )),
             )
           ],
