@@ -6,25 +6,10 @@ import 'package:my_rosary/widgets/atoms/mr_text.dart';
 class MysteryScreen extends StatelessWidget {
   const MysteryScreen({
     Key? key,
-    this.rosaryName,
+    required this.mystery,
   }) : super(key: key);
 
-  final String? rosaryName;
-
-  _setMysteries() {
-    switch (rosaryName) {
-      case 'Joyful':
-        RosariesMysteries(firstMystery: '');
-        break;
-      case 'Sorrowful':
-        break;
-      case 'Glorious':
-        break;
-      case 'Luminous':
-        break;
-      default:
-    }
-  }
+  final int mystery;
 
   @override
   Widget build(BuildContext context) {
@@ -38,29 +23,4 @@ class MysteryScreen extends StatelessWidget {
       body: Center(child: MrText(text: "Testingggg...")),
     );
   }
-}
-
-class RosariesMysteries {
-  String? firstMystery;
-  String? firstMyteryDesc;
-  String? secondMystery;
-  String? secondMyteryDesc;
-  String? thirdMystery;
-  String? thirdMyteryDesc;
-  String? fourthMystery;
-  String? fourthMyteryDesc;
-  String? fifthMystery;
-  String? fifthMyteryDesc;
-
-  RosariesMysteries(
-      {this.firstMystery,
-      this.firstMyteryDesc,
-      this.secondMystery,
-      this.secondMyteryDesc,
-      this.thirdMystery,
-      this.thirdMyteryDesc,
-      this.fourthMystery,
-      this.fourthMyteryDesc,
-      this.fifthMystery,
-      this.fifthMyteryDesc});
 }

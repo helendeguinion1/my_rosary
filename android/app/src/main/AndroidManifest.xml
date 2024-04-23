@@ -1,5 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.my_rosary">
+    <queries>  
+      <intent>  
+        <action android:name="android.intent.action.TTS_SERVICE" />  
+      </intent>  
+    </queries>  
    <application
         android:label="My Rosary"
         android:icon="@mipmap/ic_launcher">
