@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_rosary/screens/mystery_screen.dart';
+import 'package:my_rosary/screens/prayers/mystery_screen.dart';
 import 'package:my_rosary/widgets/atoms/mr_text.dart';
-import 'package:my_rosary/values/prayers.dart';
+import 'package:my_rosary/helper/prayers_helper.dart';
 import 'package:my_rosary/widgets/organisms/mr_prayer_speech.dart';
 import 'package:my_rosary/helper/rosary_mystery_helper.dart';
 

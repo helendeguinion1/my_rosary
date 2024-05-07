@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_rosary/screens/rosary_guide_screen.dart';
+import 'package:my_rosary/screens/prayers/rosary_guide_screen.dart';
 //Widget
 import 'package:my_rosary/widgets/atoms/mr_text.dart';
 

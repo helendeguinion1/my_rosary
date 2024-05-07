@@ -43,3 +43,110 @@ Map<String, dynamic> mysteryToday(String weekdaysName) {
     'imageSrc': imageSrc,
   };
 }
+
+List<Map<String, dynamic>> todaysMysteries(String mysteryName) {
+  List<Map<String, dynamic>> mysteries = [];
+  switch (mysteryName) {
+    case 'The Joyful Mystery':
+      // 1 monday 6 Saturday
+      mysteries = [
+        {
+          'title': 'The First Mystery: The Anunciation',
+          'description': 'For the Love of Humility'
+        },
+        {
+          'title': 'The Second Mystery: The Visitation',
+          'description': 'For Charity towards my Neighbor'
+        },
+        {
+          'title': 'The Third Mystery: The Birth of Jesus',
+          'description': 'For the Spirit of Poverty'
+        },
+        {
+          'title': 'The Fourth Mystery: The Presentation',
+          'description': 'For the Virtue of Obedience'
+        },
+        {
+          'title': 'The Fifth: Finding Jesus in the Temple',
+          'description': 'For the Virtue of Piety'
+        }
+      ];
+      break;
+    case 'The Sorrowful Mystery':
+      // 2 Tuesday, 5 Friday
+      mysteries = [
+        {
+          'title': 'The First Mystery: The Agony in the Garden',
+          'description': 'For the Contrition for Sin'
+        },
+        {
+          'title': 'The Second Mystery: Scourging at the Pillar',
+          'description': 'For Virtue of Purity'
+        },
+        {
+          'title': 'The Third Mystery:  Crowning with Thorns',
+          'description': 'For Moral Courage'
+        },
+        {
+          'title': 'The Fourth Mystery: Carrying of The Cross',
+          'description': 'For the Virtue of Patience'
+        },
+        {
+          'title': 'The Fifth: The Cruxifixion',
+          'description': 'For Final Perseverance'
+        }
+      ];
+      break;
+    case 'The Glorious Mystery':
+      mysteries = [
+        {
+          'title': 'The First Mystery: The Resurrection',
+          'description': 'For the Virtue of Faith'
+        },
+        {
+          'title': 'The Second Mystery: The Ascension',
+          'description': 'For the Virtue of Hope'
+        },
+        {
+          'title': 'The Third Mystery:  Descent of the Holy Spirit',
+          'description': 'For the Virtue of Love'
+        },
+        {
+          'title': 'The Fourth Mystery: The Assumption',
+          'description': 'For a Happy Death'
+        },
+        {
+          'title': 'The Fifth: The Coronation',
+          'description': 'For Eternal Salvation'
+        }
+      ];
+      break;
+    case 'The Luminous Mystery':
+      // Thursday
+      mysteries = [
+        {
+          'title': 'The First Mystery: Baptism of Jesus',
+          'description': 'Submission to God\'s Will'
+        },
+        {
+          'title': 'The Second Mystery: Wedding Feast of Cana',
+          'description': 'For Devotion to Mary'
+        },
+        {
+          'title': 'The Third Mystery:  Proclamation of the Kingdom',
+          'description': 'For the Grace os Conversion'
+        },
+        {
+          'title': 'The Fourth Mystery: The Transfiguration',
+          'description': 'For Holy Fear of God'
+        },
+        {
+          'title': 'The Fifth: Institution of the Eucharist',
+          'description': 'Thanksgiving to God'
+        }
+      ];
+      break;
+    default:
+  }
+  return mysteries;
+}

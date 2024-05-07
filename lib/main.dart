@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 //Screens
-import 'package:my_rosary/screens/main_screen.dart';
+import 'package:my_rosary/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           canvasColor: Colors.white,
           appBarTheme: const AppBarTheme(color: Color(0xfff3dadb))),
-      home: const MainScreen(),
+      home: const HomeScreen(),
     );
   }
 }

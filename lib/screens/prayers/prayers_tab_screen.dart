@@ -1,33 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:my_rosary/screens/prayers_screen.dart';
-import 'package:my_rosary/widgets/molecules/mr_main_drawer.dart';
-//Widgets
-import 'package:my_rosary/widgets/organisms/mr_scaffold.dart';
-import 'package:my_rosary/widgets/atoms/mr_text.dart';
-import 'package:my_rosary/widgets/molecules/mr_elevated_button.dart';
-//Helper
 import 'package:my_rosary/helper/date_time_helper.dart';
 import 'package:my_rosary/helper/rosary_mystery_helper.dart';
+import 'package:my_rosary/screens/prayers/prayers_screen.dart';
+import 'package:my_rosary/widgets/atoms/mr_text.dart';
+import 'package:my_rosary/widgets/molecules/mr_elevated_button.dart';
 
-class MainScreen extends StatefulWidget {
-  const MainScreen({Key? key}) : super(key: key);
+class PrayersTabScreen extends StatelessWidget {
+  const PrayersTabScreen({Key? key}) : super(key: key);
 
-  @override
-  State<MainScreen> createState() => _MainScreenState();
-}
-
-class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
-    return MrScaffold(
-        appBarTitle: const MrText(
-          text: "My Rosary",
-          fontWeight: FontWeight.bold,
-          color: Color.fromARGB(255, 59, 58, 58),
-          fontSize: 18,
-        ),
-        drawer: const MrMainDrawer(),
-        body: Column(children: <Widget>[
+    return Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
           Image.asset('assets/images/mama_mary.png'),
           const SizedBox(
             height: 30,
@@ -70,6 +55,6 @@ class _MainScreenState extends State<MainScreen> {
                           ))),
                 ),
               ))
-        ]));
+        ]);
   }
 }
