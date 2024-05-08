@@ -69,6 +69,27 @@ flutter:
     - assets/images/sorrowful_mystery.jpg
     - assets/images/app_icon.png
     - assets/images/mama_mary.png
+    - assets/images/quotes_images/babys_breath.jpg
+    - assets/images/quotes_images/book.jpg
+    - assets/images/quotes_images/green_leaf.jpg
+    - assets/images/quotes_images/man_in_fields.jpg
+    - assets/images/quotes_images/man_in_ocean.jpg
+    - assets/images/quotes_images/pink_roses.jpg
+    - assets/images/quotes_images/railway.jpg
+    - assets/images/quotes_images/sky1.jpg
+    - assets/images/quotes_images/sky2.jpg
+    - assets/images/quotes_images/sky3.jpg
+    - assets/images/quotes_images/sky4.jpg
+    - assets/images/quotes_images/sky5.jpg
+    - assets/images/quotes_images/sunflower_field.jpg
+    - assets/images/quotes_images/sunflower.jpg
+    - assets/images/quotes_images/trees.jpg
+    - assets/images/quotes_images/vintage_car.jpg
+    - assets/images/quotes_images/white_flower.jpg
+    - assets/images/quotes_images/white_yellow_flower.jpg
+    - assets/images/quotes_images/yellow_flowers.jpg
+    - assets/images/quotes_images/orange_flower.jpg
+    - assets/images/quotes_images/orange_flower_field.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

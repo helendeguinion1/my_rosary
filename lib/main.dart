@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Daily Habit',
       theme: ThemeData(
           canvasColor: Colors.white,
           appBarTheme: const AppBarTheme(color: Color(0xfff3dadb))),
