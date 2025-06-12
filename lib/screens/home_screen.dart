@@ -13,10 +13,9 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return const ScreenTemplate(
-        body: SafeArea(
-            child: Column(
+        body: Column(
           children: [MrQoutesPlaceHolder()],
-        )),
+        ),
         currIndex: 0);
   }
 }

@@ -11,13 +11,13 @@ class MrQoutesPlaceHolder extends StatelessWidget {
   Widget build(BuildContext context) {
     Random random = Random();
     int randomNumberImage = random.nextInt(20);
-    double halfHeight = MediaQuery.of(context).size.height * 0.7;
+    double containerHeight = MediaQuery.of(context).size.height * 0.934;
     int randomNumberQoutes = random.nextInt(19);
     return SizedBox(
-      height: halfHeight,
+      height: containerHeight,
       child: Stack(children: [
         Container(
-          height: halfHeight,
+          height: containerHeight,
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage(
@@ -28,7 +28,6 @@ class MrQoutesPlaceHolder extends StatelessWidget {
           ),
         ),
         Container(
-          height: halfHeight,
           width: MediaQuery.of(context).size.width,
           color: const Color.fromARGB(160, 7, 7, 7),
           child: Padding(

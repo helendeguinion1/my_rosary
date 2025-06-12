@@ -15,8 +15,9 @@ class _MrAndroidBottomNavState extends State<MrAndroidBottomNav> {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+        backgroundColor: const Color(0xFF2C3E50),
         unselectedItemColor: Colors.grey,
-        selectedItemColor: Colors.blue,
+        selectedItemColor: Colors.white,
         type: BottomNavigationBarType.fixed,
         currentIndex: currentIndex,
         onTap: (int index) {
@@ -26,15 +27,17 @@ class _MrAndroidBottomNavState extends State<MrAndroidBottomNav> {
           widget.onTap(index);
         },
         items: const [
-          BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.home)),
-          BottomNavigationBarItem(label: 'Prayers', icon: Icon(Icons.church)),
+          BottomNavigationBarItem(
+              label: 'Home', icon: Icon(Icons.home_outlined)),
+          BottomNavigationBarItem(
+              label: 'Rosary', icon: Icon(Icons.church_outlined)),
           BottomNavigationBarItem(
             label: 'Journal',
             icon: Icon(Icons.notes),
           ),
           BottomNavigationBarItem(
             label: 'Me',
-            icon: Icon(Icons.person),
+            icon: Icon(Icons.person_outline),
           ),
         ]);
   }
